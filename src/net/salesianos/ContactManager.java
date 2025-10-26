@@ -32,7 +32,7 @@ public class ContactManager {
     }
 
     // Método para mostrar todos los contactos
-    public static void mostrarContactos() {
+    public static void showContacts() {
         if (contactList.isEmpty()) {
             System.out.println("No hay contactos guardados.");
         } else {
@@ -44,8 +44,8 @@ public class ContactManager {
     }
 
     // Método para eliminar un contacto
-    public static void eliminarContacto() {
-        mostrarContactos();
+    public static void deleteContact() {
+        showContacts();
         System.out.print("\nIngrese el número del contacto a eliminar: ");
         int index = Integer.parseInt(scanner.nextLine()) - 1;
 
@@ -58,8 +58,8 @@ public class ContactManager {
     }
 
     // Método para editar un contacto
-    public static void editarContacto() {
-        mostrarContactos();
+    public static void editContact() {
+        showContacts();
         System.out.print("\nIngrese el número del contacto a editar: ");
         int index = Integer.parseInt(scanner.nextLine()) - 1;
 
