@@ -38,7 +38,7 @@ public class ContactManager {
         } else {
             for (int i = 0; i < contactList.size(); i++) {
                 System.out.println("\nContacto #" + (i + 1));
-                contactList.get(i);
+                System.out.println(contactList.get(i));
             }
         }
     }
